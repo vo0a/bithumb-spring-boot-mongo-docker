@@ -34,7 +34,7 @@ public class OptionalExampleTest {
 
     // 주문을 한 회원이 살고 있는 도시를 반환한다.
     public String getCityOfMemberFromOrder(Order order) {
-        return Optional.ofNullable(order)
+        return Optional.of(order)
                 .map(Order::getMember)
                 .map(Member::getAddress)
                 .map(Address::getCity)
@@ -49,7 +49,7 @@ public class OptionalExampleTest {
     }
 
     @Test
-    void optionalMethodTest(){
+    void optionalMethodTest() {
         Integer a = 10;
         Optional<Integer> optional = Optional.of(a);
         Integer integerValue = optional.get();

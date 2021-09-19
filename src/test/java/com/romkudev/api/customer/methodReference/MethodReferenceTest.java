@@ -10,7 +10,7 @@ import java.util.function.Supplier;
 
 public class MethodReferenceTest {
     class MethodReferenceClass {
-        Supplier<Date> newDate = Date::new;;
+        Supplier<Date> newDate = Date::new;
         Consumer<String> print = System.out::print;
         Function<Object, String> objectToString = String::valueOf;
         // Integer.parseInt("10") -> 10

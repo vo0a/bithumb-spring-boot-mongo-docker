@@ -5,7 +5,9 @@ public class Customer {
     private String firstName;
     private String lastName;
 
-    public Customer(){} // 기본생성자
+    public Customer() {
+    } // 기본생성자
+
     public Customer(String id, String firstName, String lastName) {
         this.id = id;
         this.firstName = firstName;

@@ -1,7 +1,7 @@
 version: "1"
 services:
-  mongo :
-    image : "mongo:4.4.3"
+  mongo:
+    image: "mongo:4.4.3"
     container_name: mongo
     restart: always
     ports:

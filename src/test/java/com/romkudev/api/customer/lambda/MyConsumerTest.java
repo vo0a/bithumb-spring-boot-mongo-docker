@@ -19,7 +19,7 @@ class MyConsumerTest {
     }
 
     private static <T> void printElements(List<T> list, Consumer<T> consumer) {
-        for(T t: list){
+        for (T t : list) {
             consumer.accept(t);
         }
     }
